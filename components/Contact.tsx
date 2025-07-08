@@ -11,7 +11,7 @@ import { useToast } from '@/components/ui/use-toast'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
 
 const Contact = () => {
-  const { toast } = useToast()
+  const toast = useToast()  // <-- correction ici
   
   const [formData, setFormData] = useState({
     name: '',
